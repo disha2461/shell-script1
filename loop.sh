@@ -1,9 +1,7 @@
 #!bin/bash
 
-echo 1
+for i in {1..100}
+do
+  echo $i
+done
 
-echo 2
-
-echo 3
-
-echo 4
