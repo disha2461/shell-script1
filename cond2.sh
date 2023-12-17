@@ -8,23 +8,23 @@ then
 
 fi
 
-yum install postfix -y
+yum remove postfix -y
 
 if [ $? -ne 0 ]
 then
-   echo "Installation of postfix is error"
+   echo "Installation of postfix is error(not removed)"
    exit 1
 else
-   echo "installation of postfix is success"
+   echo "installation of postfix is success(removed)"
 fi
 
-yum install maven -y
+yum remove maven -y
 
 if [ $? -ne 0 ]
 then
-   echo "Installation of maven is error"
+   echo "Installation of maven is error(not removed)"
    exit 1
 else
-   echo "Installation of maven is success"
+   echo "Installation of maven is success(removed)"
 fi
 
