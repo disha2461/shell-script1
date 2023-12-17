@@ -2,6 +2,6 @@
 
 for i in $@
 do
-  yum install $i -y
+  yum remove $i -y
 done
 
